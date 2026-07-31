@@ -10,6 +10,9 @@ import "./index.css";
 //QUESTION-3
 //import App from "./question3/App";
 
+//QUESTION-4
+import App from "./question4/App";
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
