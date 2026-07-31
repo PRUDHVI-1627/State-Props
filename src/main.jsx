@@ -11,7 +11,10 @@ import "./index.css";
 //import App from "./question3/App";
 
 //QUESTION-4
-import App from "./question4/App";
+//import App from "./question4/App";
+
+//QUESTION-5
+import App from "./question5/App";
 
 
 createRoot(document.getElementById("root")).render(
