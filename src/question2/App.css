@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
+
+.student-card {
+  border: 2px solid black;
+  padding: 15px;
+  width: 250px;
+  border-radius: 8px;
+}
+
+.student-card h2 {
+  color: red;
+}
+
+.student-card p {
+  color: red;
+}
