@@ -59,6 +59,7 @@ export default App;
 */
 
 import React, { useReducer } from 'react'
+import "./App.css";
 
 const App = () => {
     let data={
