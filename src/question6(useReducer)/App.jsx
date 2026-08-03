@@ -78,6 +78,12 @@ const App = () => {
                 list:[...state.list,state.input]
             }
         }
+        else if(action.type=="d"){
+            return{
+                ...state,
+                list:state.list.filter((_,id)=>id!=action.payload)
+            }
+        }
     }
 
     let [state,dispatch]=  useReducer(reduser,data)
@@ -87,9 +93,9 @@ const App = () => {
         <input  onChange={(e)=>dispatch({type:"inp",payload:e.target.value})}/>
        <button  onClick={()=>dispatch({type:"add"})}>add</button>
        {
-        state.list.map((a)=>{
+        state.list.map((a,id)=>{
             return(<>
-            <li>{a}</li>
+            <li onClick={()=>dispatch({type:"d",payload:id})}>{a}</li>
             </>)
         })
        }
